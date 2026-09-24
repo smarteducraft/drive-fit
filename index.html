@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#f8fafc">
+  <title>DriveFit</title>
+  <style>
+    * { box-sizing: border-box; }
+
+    html,
+    body {
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background: #f8fafc;
+    }
+
+    body {
+      position: relative;
+      min-width: 0;
+    }
+
+    .drivefit-shell {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      background: #f8fafc;
+    }
+
+    .drivefit-frame {
+      display: block;
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      border: 0;
+      background: #f8fafc;
+    }
+
+    .fallback {
+      position: absolute;
+      inset: 0;
+      z-index: -1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+      color: #475569;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      text-align: center;
+      background: #f8fafc;
+    }
+  </style>
+</head>
+<body>
+  <main class="drivefit-shell">
+    <div class="fallback">DriveFit을 불러오는 중입니다.</div>
+    <iframe
+      class="drivefit-frame"
+      title="DriveFit"
+      src="https://script.google.com/macros/s/AKfycby3-tjhL8Fylj9nwFPC5dKJ5rc7NUlfO9DYfp-1B40Lc7KybOqI6NTbbGgZ1Od560Ky/exec"
+      loading="eager"
+      allow="clipboard-read; clipboard-write"
+      referrerpolicy="strict-origin-when-cross-origin">
+    </iframe>
+  </main>
+</body>
+</html>
